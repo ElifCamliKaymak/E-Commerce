@@ -1,0 +1,23 @@
+@model Product
+
+<div class="col-md-4 col-sm-12 col-xl-4 my-3">
+    <div class="card" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@Model.ProductName</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Model.Price.ToString("c")</li>
+
+        </ul>
+        <div class="card-body">
+            <a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary">
+                Details
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
