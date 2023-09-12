@@ -13,7 +13,7 @@ namespace Services
             _repositoryManager = repositoryManager;
         }
 
-        public IEnumerable<Category> GetAllCAtegories(bool trackChanges)
+        public IEnumerable<Category> GetAllCategories(bool trackChanges)
         {
             return _repositoryManager.CategoryRepository.FindAll(trackChanges);
         }

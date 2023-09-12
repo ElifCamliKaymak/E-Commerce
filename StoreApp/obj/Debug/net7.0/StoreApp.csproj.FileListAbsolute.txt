@@ -276,3 +276,5 @@ C:\Repositories\btk\Store\StoreApp\obj\Debug\net7.0\refint\StoreApp.dll
 C:\Repositories\btk\Store\StoreApp\obj\Debug\net7.0\StoreApp.pdb
 C:\Repositories\btk\Store\StoreApp\obj\Debug\net7.0\StoreApp.genruntimeconfig.cache
 C:\Repositories\btk\Store\StoreApp\obj\Debug\net7.0\ref\StoreApp.dll
+C:\Repositories\btk\Store\StoreApp\bin\Debug\net7.0\AutoMapper.dll
+C:\Repositories\btk\Store\StoreApp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

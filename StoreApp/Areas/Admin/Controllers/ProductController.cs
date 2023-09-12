@@ -1,5 +1,8 @@
+using Entities.Dtos;
 using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Services.Contracts;
 
 namespace StoreApp.Areas.Admin.Controllers
@@ -22,16 +25,17 @@ namespace StoreApp.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.Categories = new SelectList(_manager.CategoryService.GetAllCategories(false), "CategoryId", "CategoryName", "1");
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([FromForm] Product product)
+        public IActionResult Create([FromForm] ProductDtoForInsertion productDto)
         {
             if (ModelState.IsValid)
             {
-                _manager.ProductService.CreateProduct(product);
+                _manager.ProductService.CreateProduct(productDto);
                 return RedirectToAction("Index");
             }
             return View();
@@ -39,23 +43,26 @@ namespace StoreApp.Areas.Admin.Controllers
 
         public IActionResult Update([FromRoute(Name = "id")] int id)
         {
-            var model = _manager.ProductService.GetOneProduct(id, false);
+            var model = _manager.ProductService.GetOneProductForUpdate(id, false);
+
+            ViewBag.Categories = new SelectList(_manager.CategoryService.GetAllCategories(false), "CategoryId", "CategoryName", "1");
+
             return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update(Product product)
+        public IActionResult Update([FromForm]ProductDtoForUpdate productDto)
         {
             if (ModelState.IsValid)
             {
-                _manager.ProductService.UpdateOneProduct(product);
+                _manager.ProductService.UpdateOneProduct(productDto);
                 return RedirectToAction("Index");
             }
             return View();
         }
         [HttpGet]
-        public IActionResult Delete([FromRoute(Name = "id")]int id)
+        public IActionResult Delete([FromRoute(Name = "id")] int id)
         {
             _manager.ProductService.DeleteOneProduct(id);
             return RedirectToAction("Index");
