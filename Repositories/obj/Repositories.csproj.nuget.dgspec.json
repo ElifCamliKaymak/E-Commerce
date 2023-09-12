@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Repositories\\Repositories.csproj": {}
+    "C:\\Repositories\\btk\\Store\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj": {
+    "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\ELİF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\obj\\",
+        "outputPath": "C:\\Repositories\\btk\\Store\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ELİF\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Repositories\\Repositories.csproj": {
+    "C:\\Repositories\\btk\\Store\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Repositories\\btk\\Store\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Repositories\\Repositories.csproj",
+        "projectPath": "C:\\Repositories\\btk\\Store\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\ELİF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Repositories\\obj\\",
+        "outputPath": "C:\\Repositories\\btk\\Store\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ELİF\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj"
+              "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj"
               }
             }
           }

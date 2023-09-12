@@ -2,9 +2,12 @@ using Entities.Models;
 
 namespace Services.Contracts
 {
-    public interface IProductService 
+    public interface IProductService
     {
         IEnumerable<Product> GetAllProducts(bool trackChanges);
         Product? GetOneProduct(int id, bool trackChanges);
+        void UpdateOneProduct(Product product);
+        void CreateProduct(Product product);
+        void DeleteOneProduct(int id);
     }
 }

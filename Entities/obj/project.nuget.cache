@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hkVlX8PEjrCcWyNCkiz88/Mlv3q7RNumbbaxfvIBBR+d6oosPhzGXSUoUowHc8qxOnk1sSzI4dqy+4gTOJV9Ng==",
+  "dgSpecHash": "EBP0dsRmSXAji61yJIPleEEGHxPT8A1F8oKnGWYRE7A+TSrB7BdeYhSW873Aar1++o/7mJyt3KDEYneW0aS6vQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

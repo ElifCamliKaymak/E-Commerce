@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Repositories\\btk\\Store\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\ELİF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ELİF\\OneDrive\\Desktop\\btk\\Store\\Entities\\obj\\",
+      "outputPath": "C:\\Repositories\\btk\\Store\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ELİF\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,13 +9,17 @@ namespace Repositories
         {
         }
 
+        public void CreateOneProduct(Product product) => Create(product);
+
+        public void DeleteOneProduct(Product product)=> Remove(product);
+
         public IQueryable<Product> GetAllProduct(bool trackChanges)
             => FindAll(trackChanges);
 
 
         public Product? GetOneProduct(int id, bool trackChanges)
         {
-            return FingByCondition(p=>p.ProductId.Equals(id),trackChanges);
+            return FingByCondition(p => p.ProductId.Equals(id), trackChanges);
         }
     }
 }
