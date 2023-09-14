@@ -24207,6 +24207,16 @@
       "FilePath": "c:\\Repositories\\btk\\Store\\StoreApp\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositories\\btk\\Store\\StoreApp\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Order\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositories\\btk\\Store\\StoreApp\\Areas\\Admin\\Views\\Order\\_OrderDetails.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Order\\_OrderDetails.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }
