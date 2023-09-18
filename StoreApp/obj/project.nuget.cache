@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ox3uCCdQlflJpsBvmf5m5YFRUCLyguCtM8OEG47FP9WCc4r/J4gzXHN1yluBrPK9lOS10zzOPF21TFvrBmiMvA==",
+  "dgSpecHash": "h0VNu33OdNQvQs7EtY9In+8ehUoobpiDIhBcxz28RxL2OVPJ+22XyI6FG8+6gyEsFqBDqDPRCyxwr08yJDW05w==",
   "success": true,
-  "projectFilePath": "C:\\Repositories\\btk\\Store\\StoreApp\\StoreApp.csproj",
+  "projectFilePath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\StoreApp\\StoreApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ELİF\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ELİF\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

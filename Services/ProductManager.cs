@@ -56,6 +56,11 @@ namespace Services
             return _mapper.Map<ProductDtoForUpdate>(product);
         }
 
+        public IQueryable<Product> GetShowCaseProduct(bool trackChanges)
+        {
+            return _manager.ProductRepository.GetShowCaseProduct(trackChanges);
+        }
+
         public void UpdateOneProduct(ProductDtoForUpdate productDto)
         {
             //var entity = _manager.ProductRepository.GetOneProduct(productDto.ProductId, true);

@@ -3,26 +3,27 @@
 
 <div class="col-md-4 col-sm-12 col-xl-4 my-3">
     <div class="card" style="width: 18rem;">
+        <div class="card-header text-center">
+            @Model.ProductName
+        </div>
+
         <img src="@Model.ImageUrl" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">@Model.ProductName</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item text-danger">@Model.Price.ToString("c")</li>
+            </ul>
+            <p class="card-text">@Model?.Summary</p>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">@Model.Price.ToString("c")</li>
-
-        </ul>
-        <div class="card-body">
+        <div class="card-body d-flex justify-content-center">
             <div class="btn-group">
-                <a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary">
-                    Details
+                <a asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId"
+                    class="btn btn-outline-secondary rounded-2 mx-1">
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <form id="@Model.ProductId" asp-page="/cart" method="post">
                     <input type="hidden" asp-for="ProductId" />
                     <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-                    <button type="submit" class="btn btn-outline-primary">
+                    <button type="submit" class="btn btn-outline-secondary">
                         <i class="fa fa-cart-plus"></i>
                     </button>
                 </form>
