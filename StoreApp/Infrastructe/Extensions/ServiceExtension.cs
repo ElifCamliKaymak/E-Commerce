@@ -5,6 +5,7 @@ using Repositories;
 using Services.Contracts;
 using Services;
 using StoreApp.Models;
+using System.IO.Compression;
 
 namespace StoreApp.Infrastructe.Extensions
 {
@@ -46,6 +47,15 @@ namespace StoreApp.Infrastructe.Extensions
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<IOrderService, OrderManager>();
+        }
+
+        public static void ConfigureRouting(this IServiceCollection services)
+        {
+            services.AddRouting(options =>
+            {
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = false;
+            });
         }
     }
 }

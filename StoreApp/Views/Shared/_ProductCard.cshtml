@@ -15,18 +15,18 @@
             <p class="card-text">@Model?.Summary</p>
         </div>
         <div class="card-body d-flex justify-content-center">
+            <form id="@Model.ProductId" asp-page="/cart" method="post">
+                <input type="hidden" asp-for="ProductId" />
+                <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                <button type="submit" class="btn btn-outline-secondary">
+                    <i class="fa fa-cart-plus"></i>
+                </button>
+            </form>
             <div class="btn-group">
                 <a asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId"
                     class="btn btn-outline-secondary rounded-2 mx-1">
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
-                <form id="@Model.ProductId" asp-page="/cart" method="post">
-                    <input type="hidden" asp-for="ProductId" />
-                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-                    <button type="submit" class="btn btn-outline-secondary">
-                        <i class="fa fa-cart-plus"></i>
-                    </button>
-                </form>
             </div>
         </div>
     </div>
