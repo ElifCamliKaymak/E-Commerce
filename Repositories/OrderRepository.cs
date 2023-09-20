@@ -23,7 +23,7 @@ namespace Repositories
 
         public void Complete(int id)
         {
-            var order = FingByCondition(o => o.OrderId.Equals(id), true);
+            var order = FindByCondition(o => o.OrderId.Equals(id), true);
             if (order is null)
                 throw new Exception("Order could not found!");
 
@@ -33,7 +33,7 @@ namespace Repositories
 
         public Order? GetOneOrder(int id)
         {
-            return FingByCondition(o => o.OrderId.Equals(id), false);
+            return FindByCondition(o => o.OrderId.Equals(id), false);
         }
 
         public void SaveOrder(Order order)

@@ -25,7 +25,7 @@ namespace Repositories
                 : _context.Set<T>().AsNoTracking();
         }
 
-        public T? FingByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
+        public T? FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
         {
             return trackChanges
             ? _context.Set<T>().Where(expression).SingleOrDefault()
