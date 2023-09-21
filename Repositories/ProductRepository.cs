@@ -23,7 +23,8 @@ namespace Repositories
             return _context.Products
                 .FilteredByCategoryId(p.CategoryId)
                 .FilteredBySearchTerm(p.SearchTerm)
-                .FilteredByPrice(p.MinPrice, p.MaxPrice, p.ISValidPrice);
+                .FilteredByPrice(p.MinPrice, p.MaxPrice, p.ISValidPrice)
+                .ToPaginate(p.PageNumber, p.PageSize);
         }
 
         public Product? GetOneProduct(int id, bool trackChanges)
