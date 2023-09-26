@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Services\\Services.csproj": {}
+    "C:\\Users\\camli\\source\\repos\\E-Commerce\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj": {
+    "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\ELİF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\camli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELİF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\camli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,21 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\camli\\source\\repos\\E-Commerce\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\ELİF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Repositories\\obj\\",
+        "projectPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\camli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELİF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\camli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,8 +89,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj"
+              "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj"
               }
             }
           }
@@ -124,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Services\\Services.csproj": {
+    "C:\\Users\\camli\\source\\repos\\E-Commerce\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\ELİF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Services\\obj\\",
+        "projectPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\camli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELİF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\camli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,11 +158,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Entities\\Entities.csproj"
+              "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\ELİF\\Source\\Repos\\E-Commerce\\Repositories\\Repositories.csproj"
+              "C:\\Users\\camli\\source\\repos\\E-Commerce\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\camli\\source\\repos\\E-Commerce\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -192,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

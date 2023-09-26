@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 
-namespace StoreApp.Infrastructe.Extensions
+namespace StoreApp.Infrastructure.Extensions
 {
     public static class SessionExtension
     {
