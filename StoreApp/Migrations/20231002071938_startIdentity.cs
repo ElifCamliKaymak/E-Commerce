@@ -241,6 +241,16 @@ namespace StoreApp.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "359b98bf-c523-41a5-beec-20cfa98d5e01", null, "Admin", "ADMIN" },
+                    { "bd8e4e39-8ba6-4d9d-ac1a-10ee92ad15e1", null, "Editor", "EDITOR" },
+                    { "cb4b2590-b460-4f0f-b312-04311db2d4a7", null, "User", "USER" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryId", "CategoryName" },
                 values: new object[,]

@@ -11,12 +11,14 @@ namespace StoreApp.Infrastructure.Extensions
 {
     public static class ServiceExtension
     {
-        public static void ConfigureDbContext(this IServiceCollection services, IConfiguration configuration)
+        public static void ConfigureDbContext(this IServiceCollection services,
+            IConfiguration configuration)
         {
 
             services.AddDbContext<RepositoryContext>(options =>
             {
-                options.UseSqlite(configuration.GetConnectionString("sqlConnection"), b => b.MigrationsAssembly("StoreApp"));
+                options.UseSqlite(configuration.GetConnectionString("sqlConnection"),
+                    b => b.MigrationsAssembly("StoreApp"));
 
                 options.EnableSensitiveDataLogging(true);
             });
@@ -27,11 +29,11 @@ namespace StoreApp.Infrastructure.Extensions
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
-                options.User.RequireUniqueEmail=true;
-                options.Password.RequireUppercase =false;
-                options.Password.RequireLowercase=false;
-                options.Password.RequireDigit=false;
-                options.Password.RequiredLength=6;
+                options.User.RequireUniqueEmail = true;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 6;
             })
             .AddEntityFrameworkStores<RepositoryContext>();
         }
@@ -64,6 +66,7 @@ namespace StoreApp.Infrastructure.Extensions
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<IOrderService, OrderManager>();
+            services.AddScoped<IAuthService, AuthManager>();
         }
 
         public static void ConfigureRouting(this IServiceCollection services)
