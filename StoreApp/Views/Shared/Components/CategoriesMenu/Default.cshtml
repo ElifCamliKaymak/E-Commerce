@@ -1,6 +1,17 @@
 @model IEnumerable<Category>
+
+<div class="my-3">
+    <h6 class="lead">
+        <i class="fa-solid fa-tags text-secondary"></i>
+        Categories
+    </h6>
+</div>
+
 <div class="my-4">
     <ul class="list-group">
+        <li class="list-group-item">
+            <a asp-action="Index" asp-controller="Product">All Categories</a>
+        </li>
         @if (Model != null)
         {
             foreach (var cat in Model)

@@ -1,6 +1,5 @@
 using Entities.RequestParameters;
 using Microsoft.AspNetCore.Mvc;
-using Repositories.Contracts;
 using Services.Contracts;
 using StoreApp.Models;
 
@@ -34,7 +33,9 @@ namespace StoreApp.Controllers
 
         public IActionResult Get([FromRoute(Name = "id")] int id)
         {
+            
             var model = _manager.ProductService.GetOneProduct(id, false);
+            ViewData["Title"] = model?.ProductName;
             return View(model);
         }
     }

@@ -26,18 +26,20 @@
                 <td user-name="@user.UserName" user-role=""></td>
                 <td>
                     <div class="btn-group">
-                        <a class="btn btn-warning text-white rounded-2" asp-action="Update" asp-controller="User"
+                        <a data-toggle="tooltip" data-placement="top" title="Edit"
+                            class="btn btn-warning text-white rounded-2" asp-action="Update" asp-controller="User"
                             asp-route-id="@user.UserName">
-                            <i class="fa fa-solid fa-edit"></i>Edit</a>
-                        <a class="btn btn-info text-white rounded-2" asp-action="ResetPassword" asp-controller="User"
+                            <i class="fa fa-solid fa-edit"></i></a>
+                        <a data-toggle="tooltip" data-placement="top" title="Reset Password"
+                            class="btn btn-info text-white rounded-2" asp-action="ResetPassword" asp-controller="User"
                             asp-route-id="@user.UserName">
                             <i class="fa-solid fa-arrows-rotate"></i>
-                            Reset Password</a>
+                        </a>
                         <form asp-action="DeleteOneUser" method="post">
                             <input type="hidden" name="UserName" value="@user.UserName">
-                            <button type="submit" class="btn btn-danger rounded-2">
+                            <button data-toggle="tooltip" data-placement="top" title="Delete" type="submit"
+                                class="btn btn-danger rounded-2">
                                 <i class="fa fa-solid fa-trash"></i>
-                                Delete
                             </button>
                         </form>
                     </div>
@@ -46,3 +48,12 @@
         }
     </tbody>
 </table>
+
+@section Scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $(`[data-toggle="tooltip"]`).tooltip()
+        });
+    </script>
+}
