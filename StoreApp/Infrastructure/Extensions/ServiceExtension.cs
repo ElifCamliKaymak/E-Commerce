@@ -6,6 +6,8 @@ using Services.Contracts;
 using Services;
 using StoreApp.Models;
 using Microsoft.AspNetCore.Identity;
+using StoreApp.Controllers;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace StoreApp.Infrastructure.Extensions
 {
@@ -75,6 +77,17 @@ namespace StoreApp.Infrastructure.Extensions
             {
                 options.LowercaseUrls = true;
                 options.AppendTrailingSlash = false;
+            });
+        }
+
+        public static void ConfigureApplicationCookie(this IServiceCollection services)
+        {
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = new PathString("/Account/Login");
+                options.ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+                options.AccessDeniedPath = new PathString("/Account/AccessDenied");
             });
         }
     }

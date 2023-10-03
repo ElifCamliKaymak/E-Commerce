@@ -1,14 +1,13 @@
 using Entities.Dtos;
-using Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
-using Microsoft.Extensions.DependencyModel;
 using Services.Contracts;
 
 namespace StoreApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ProductController : Controller
     {
         private readonly IServiceManager _manager;
@@ -41,14 +40,14 @@ namespace StoreApp.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 //file operation
-                string path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",file.FileName);
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", file.FileName);
 
-                using(var stream = new FileStream(path,FileMode.Create))
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
 
-                productDto.ImageUrl = string.Concat("/images/",file.FileName);
+                productDto.ImageUrl = string.Concat("/images/", file.FileName);
 
                 _manager.ProductService.CreateProduct(productDto);
                 return RedirectToAction("Index");
@@ -72,14 +71,14 @@ namespace StoreApp.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 //file operation
-                string path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",file.FileName);
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", file.FileName);
 
-                using(var stream = new FileStream(path,FileMode.Create))
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
 
-                productDto.ImageUrl = string.Concat("/images/",file.FileName);
+                productDto.ImageUrl = string.Concat("/images/", file.FileName);
 
                 _manager.ProductService.UpdateOneProduct(productDto);
                 return RedirectToAction("Index");
