@@ -427,3 +427,6 @@ C:\Users\camli\Source\Repos\E-Commerce\StoreApp\obj\Debug\net7.0\StoreApp.pdb
 C:\Users\camli\Source\Repos\E-Commerce\StoreApp\obj\Debug\net7.0\StoreApp.genruntimeconfig.cache
 C:\Users\camli\Source\Repos\E-Commerce\StoreApp\obj\Debug\net7.0\ref\StoreApp.dll
 C:\Users\camli\source\repos\E-Commerce\StoreApp\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\camli\source\repos\E-Commerce\StoreApp\bin\Debug\net7.0\Presentation.dll
+C:\Users\camli\source\repos\E-Commerce\StoreApp\bin\Debug\net7.0\Presentation.pdb
+C:\Users\camli\source\repos\E-Commerce\StoreApp\obj\Debug\net7.0\StoreApp.MvcApplicationPartsAssemblyInfo.cs
